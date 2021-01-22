@@ -1,3 +1,10 @@
+<?php  
+include __DIR__."/db.php";
+var_dump($albums);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
