@@ -1,3 +1,23 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: grey;
+}
+
 body {
-  background-color: tomato;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: blue;
+}
+
+.wrapper_90 {
+  width: 90%;
+  margin: 0px auto;
 }

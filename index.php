@@ -1,6 +1,6 @@
 <?php  
 include __DIR__."/db.php";
-var_dump($albums);
+// var_dump($albums);
 ?>
 
 
@@ -13,8 +13,16 @@ var_dump($albums);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
+
 </head>
 <body>
-    
+    <div class="wrapper_90">
+    <header>
+        <img src="" alt="">
+    </header>
+    <main>
+        
+    </main>
+    </div>
 </body>
 </html>

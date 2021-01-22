@@ -1,3 +1,15 @@
+@import "partials/header.scss";
+@import "partials/main.scss";
+
 body {
-    background-color: tomato;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: blue;
+};
+
+.wrapper_90 {
+    width: 90%;
+    margin: 0px auto;
 }
+
