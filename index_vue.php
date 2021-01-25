@@ -18,6 +18,14 @@
 		<!-- MAIN -->
     <main>
       <div class="albums_container">
+				<div class="album" v-for="album in albums">
+				<div class="cover">
+					<img :src="album.poster" alt="">
+				</div>
+				<h3>{{album.title}}</h3>
+				<h3>{{album.author}}</h3>
+				<h4>{{album.year}}</h4>
+				</div>
       </div>
     </main>
 		<!-- /MAIN -->
