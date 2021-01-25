@@ -9,10 +9,9 @@ var app = new Vue({
   },
   mounted: function () {
     axios
-    .get('http://localhost:8888/php-ajax-dischi/server.php') 
+    .get('server.php') 
     .then((response) => {
     this.albums = response.data; 
-    console.log(this.albums);
     });
   },
 })

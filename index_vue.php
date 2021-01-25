@@ -14,6 +14,15 @@
 	<!-- HEADER -->
 	<header>
     <img :src="logo" alt="logo">
+		<form action="genre.php " method="get">
+		<select name="genre">
+		<option value="tutti">TUTTI</option>
+		<option value="rock">ROCK</option>
+		<option value="pop">POP</option>
+		<option value="jazz">ROCK</option>
+		</select>
+		<button type="submit" name="button">VAI</button>
+		</form>
     </header>   
 		<!-- /HEADER -->
 
