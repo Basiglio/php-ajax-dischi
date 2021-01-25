@@ -14,7 +14,7 @@
 	<!-- HEADER -->
 	<header>
     <img :src="logo" alt="logo">
-		<form action="genre.php " method="get">
+		<form action="index_genre.php " method="get">
 		<select name="genre">
 		<option value="tutti">TUTTI</option>
 		<option value="rock">ROCK</option>
