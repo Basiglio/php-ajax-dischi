@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: '#app',
   data: {
-    message: "HELLO WORLD"
+    logo: "https://i.pinimg.com/originals/83/3c/f5/833cf5fe43f8c92c1fcb85a68b29e585.png"
   }
 });
 
