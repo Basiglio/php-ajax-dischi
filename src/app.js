@@ -8,10 +8,11 @@ var app = new Vue({
     albums:[],
   },
   mounted: function () {
-    axios.get('https://flynn.boolean.careers/exercises/api/array/music') 
-  .then((response) => {
-    this.albums = response.data.response; 
+    axios
+    .get('http://localhost:8888/php-ajax-dischi/server.php') 
+    .then((response) => {
+    this.albums = response.data; 
     console.log(this.albums);
-  });
+    });
   },
 })

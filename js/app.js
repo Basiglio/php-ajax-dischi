@@ -1856,8 +1856,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('https://flynn.boolean.careers/exercises/api/array/music').then(function (response) {
-      _this.albums = response.data.response;
+    axios.get('http://localhost:8888/php-ajax-dischi/server.php').then(function (response) {
+      _this.albums = response.data;
       console.log(_this.albums);
     });
   }
