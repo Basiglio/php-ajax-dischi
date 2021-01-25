@@ -21,7 +21,7 @@
     </header>
     <main>
       <div class="albums_container">
-         <?php foreach ($albums as $album ) {  
+         <?php foreach ($albums as $album) {  
            echo "<div class='album'>"."<div class='cover'>".
             "<img src='".$album['poster']."'"."alt=''>".
             "</div>".
