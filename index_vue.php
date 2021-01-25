@@ -9,8 +9,10 @@
 </head>
 <body>
   <span id="app">
+	
+	<div class="wrapper_90">
 	<!-- HEADER -->
-    <header>
+	<header>
     <img :src="logo" alt="logo">
     </header>   
 		<!-- /HEADER -->
@@ -29,6 +31,9 @@
       </div>
     </main>
 		<!-- /MAIN -->
+	
+	</div>
+   
   </span>
     <script src="js/app.js" charset="utf-8"></script>
 </body>
