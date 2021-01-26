@@ -10,37 +10,37 @@
 <body>
   <span id="app">
 	
-	<div class="wrapper_90">
-	<!-- HEADER -->
-	<header>
-    <img :src="logo" :alt="logo">
-		<select name="genre" v-model="genre">
-		<option value="">TUTTI</option>
-		<option value="rock">ROCK</option>
-		<option value="pop">POP</option>
-		<option value="jazz">JAZZ</option>
-		<option value="metal">METAL</option>
-		</select>
-		<button type="submit" name="button">VAI</button>
-    </header>   
-		<!-- /HEADER -->
+		<div class="wrapper_90">
+			<!-- HEADER -->
+			<header>
+				<img :src="logo" :alt="logo">
+				<select name="genre" v-model="genre">
+				<option value="">TUTTI</option>
+				<option value="rock">ROCK</option>
+				<option value="pop">POP</option>
+				<option value="jazz">JAZZ</option>
+				<option value="metal">METAL</option>
+				</select>
+				<button  name="button" @click="filter">VAI</button>
+			</header>
+			<!-- /HEADER -->
 
-		<!-- MAIN -->
-    <main>
-      <div class="albums_container">
-				<div class="album" v-for="album in albums">
-				<div class="cover">
-					<img :src="album.poster" alt="">
+			<!-- MAIN -->
+			<main>
+				<div class="albums_container">
+					<div class="album" v-for="album in albums">
+					<div class="cover">
+						<img :src="album.poster" alt="">
+					</div>
+					<h3>{{album.title}}</h3>
+					<h3>{{album.author}}</h3>
+					<h4>{{album.year}}</h4>
+					</div>
 				</div>
-				<h3>{{album.title}}</h3>
-				<h3>{{album.author}}</h3>
-				<h4>{{album.year}}</h4>
-				</div>
-      </div>
-    </main>
-		<!-- /MAIN -->
-	
-	</div>
+			</main>
+			<!-- /MAIN -->
+		
+		</div>
    
   </span>
     <script src="js/app.js" charset="utf-8"></script>

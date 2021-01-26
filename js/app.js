@@ -1851,7 +1851,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: '#app',
   data: {
     logo: "https://i.pinimg.com/originals/83/3c/f5/833cf5fe43f8c92c1fcb85a68b29e585.png",
-    albums: []
+    albums: [],
+    genre: ""
   },
   mounted: function mounted() {
     var _this = this;
@@ -1860,7 +1861,19 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
       _this.albums = response.data;
     });
   },
-  methods: {}
+  methods: {
+    filter: function filter() {
+      var _this2 = this;
+
+      axios.get('server.php', {
+        params: {
+          genre: this.genre
+        }
+      }).then(function (response) {
+        _this2.albums = response.data;
+      });
+    }
+  }
 });
 
 /***/ }),
