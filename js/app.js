@@ -1865,7 +1865,9 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
     filter: function filter() {
       var _this2 = this;
 
-      axios.get('server.php', {
+      axios //FACCIO LA CHIAMATA AL SERVER
+      .get('server.php', {
+        //PASSO AL SERVER IL PARAMETRO DEL VALUE DELLA SELECT
         params: {
           genre: this.genre
         }

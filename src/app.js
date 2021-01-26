@@ -17,8 +17,9 @@ var app = new Vue({
   },
   methods: {
     filter: function () {
-      axios
+      axios //FACCIO LA CHIAMATA AL SERVER
       .get('server.php', {
+        //PASSO AL SERVER IL PARAMETRO DEL VALUE DELLA SELECT
         params: {
           genre: this.genre,
         },
