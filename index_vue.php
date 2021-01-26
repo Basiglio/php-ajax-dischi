@@ -13,16 +13,15 @@
 	<div class="wrapper_90">
 	<!-- HEADER -->
 	<header>
-    <img :src="logo" alt="logo">
-		<form action="index_genre.php " method="get">
-		<select name="genre">
-		<option value="tutti">TUTTI</option>
+    <img :src="logo" :alt="logo">
+		<select name="genre" v-model="genre">
+		<option value="">TUTTI</option>
 		<option value="rock">ROCK</option>
 		<option value="pop">POP</option>
-		<option value="jazz">ROCK</option>
+		<option value="jazz">JAZZ</option>
+		<option value="metal">METAL</option>
 		</select>
 		<button type="submit" name="button">VAI</button>
-		</form>
     </header>   
 		<!-- /HEADER -->
 

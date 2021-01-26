@@ -14,4 +14,6 @@ var app = new Vue({
     this.albums = response.data; 
     });
   },
+  methods: {
+  },
 })

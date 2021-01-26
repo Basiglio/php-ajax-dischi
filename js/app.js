@@ -1859,7 +1859,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
     axios.get('server.php').then(function (response) {
       _this.albums = response.data;
     });
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
